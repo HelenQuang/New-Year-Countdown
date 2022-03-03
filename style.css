@@ -4,29 +4,14 @@
   box-sizing: border-box;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 100vh;
-  overflow: hidden;
-  font-family: "Lobster Two", sans-serif;
-  margin: 0;
-  background-color: #faebd7;
-}
-
-.newyear,
-.lunarnewyear {
-  background-color: aquamarine;
-}
-/* body {
-  background-image: url("https://images.unsplash.com/photo-1620118659129-94e56af96a60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+body {
+  background-image: url("https://images.unsplash.com/photo-1467810563316-b5476525c0f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   height: 100vh;
   color: #fff;
-  font-family: "Lobster Two", sans-serif;
+  font-family: "Lato", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,42 +19,68 @@
   text-align: center;
   margin: 0;
   overflow: hidden;
-} */
+}
 
-/* Add a dark overlay */
-/* body::after {
+body::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(56, 56, 56, 0.37);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 body * {
   z-index: 1;
-} */
+}
 
 h1 {
   font-size: 60px;
-  margin: 0;
+  margin: -80px 0 40px;
+}
+
+.loading {
+  width: 200px;
+  position: absolute;
+  top: 400px;
 }
 
 .year {
   font-size: 200px;
   z-index: -1;
-  opacity: 0.2;
+  opacity: 0.7;
   position: absolute;
-  bottom: 20px;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 400px;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Lobster Two", sans-serif;
+  margin: 0;
+  margin-top: 100px;
 }
 
 .countdown {
   /* display: flex; */
   display: none;
   transform: scale(2);
+}
+
+.newyear {
+  margin-left: 150px;
+}
+
+.lunarnewyear {
+  margin-left: 250px;
 }
 
 .time {
@@ -84,11 +95,8 @@ h1 {
   margin: 0 0 5px;
 }
 
-.loading {
-  width: 50px;
-  height: 50px;
-  border: none;
-  border-radius: 10px;
+.seconds {
+  color: rgb(247, 49, 132);
 }
 
 @media (max-width: 500px) {
